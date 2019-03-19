@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: auto;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer {
+    background-color: aqua;
+    height: 100px;
+}
+
+.calc {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.calc-display {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.header {
+    background-color: blue;
+    height: 60px;
+}
+
+.calc-display__memory {
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 13px;
+    color: #757575;
+    text-align: right;
+    padding: 5px;
+    border: none;
+}
+
+.calc-display__text {
+    height: 50px;
+    width: 568px;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 0px;
+    margin-bottom: 4px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+    padding: 10px;
+}
+
+.calc-numpad-row {
+    display: flex;
+    width: 600px;
+    justify-content: space-around;
+}
+
+.calc-numpad-row__button {
+    height: 40px;
+    width: 80px;
+    margin: 4px;
+    padding: 0px, 10px;
+    font-size: 14px;
+    background-color: #d4d4d4;
+    border: 1px solid #b8b8b5;
+    text-align: center;
+}
+
+.calc-numpad-row__button:hover {
+    border: 1px solid #858584;
+}
+
+.calc-numpad-row__button:active {
+    border: 1px solid #4787ee;
+}
+
+.calc-numpad-row__button--switchOnRadDeg {
+    background: #4787ee
+}
+
+.calc-numpad-row__button--number {
+    background-color: #f1f1f1;
+}
+
+.calc-numpad-row__button--operationButton {
+    font-size: 20px;
+}
+
+.calc-numpad-row__button--equally {
+    background-color: #4787ee;
+    font-size: 20px;
+    color: white;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body * {
+            margin: 10px;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+<canvas id="a" width="500" height="425"></canvas>
+<canvas id="b" width="500" height="425"></canvas>
+<script src="src/canvas_draw.js"></script>
+<script>
+    //первый способ
+    new CanvasPainter("a");
+
+    //второй способ
+    const b = new CanvasPainter();
+    b.setCanvas("b");
+</script>
+</body>
+</html>
